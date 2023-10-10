@@ -1,0 +1,33 @@
+﻿﻿@model IEnumerable<Police.Models.Verbale>
+@{
+    ViewBag.Title = "Indice";
+}
+
+<h2>Index</h2>
+<h1>Anagrafica Furfanti</h1>
+
+@foreach (Police.Models.Verbale item in Model)
+{
+    <div class="container">
+        <div class="row d-flex justify-content-around">
+            <div class="col-3">
+                <h3>@item.IndirizzoViolazione @item.NominativoAgente</h3>
+
+                <h3>@item.Importo</h3>
+                <h3>@item.IdVerbale</h3>
+            </div>
+        </div>
+    </div>
+
+}
+
+@foreach (Police.Models.Verbale item in Model)
+            {
+                <div>
+                    <h2>
+                        @item.Importo>400
+                    </h2>
+                </div>
+            }
+
+

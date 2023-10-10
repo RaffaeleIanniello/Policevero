@@ -1,0 +1,27 @@
+﻿﻿@model IEnumerable<Police.Models.Anagrafica>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h1>Anagrafica Furfanti</h1>
+
+@foreach (Police.Models.Anagrafica item in Model)
+{
+   <div class="container">
+       <div class="row">
+           <div class="col-1 d-flex flex-row justify-content-between">
+               <h3>@item.cognome</h3>
+               <h3>@item.nome</h3>
+               <h3> @item.indirizzo </h3>
+                   <h3>@item.citta</h3>
+                   <h3>@item.CAP</h3>
+              
+           </div>
+       
+       </div>
+   </div>
+
+}
+
+
